@@ -184,7 +184,7 @@
 $('#formSubmit').click(function () {
         $('#loader').show();
         $('#formSubmit').prop('disabled', true);
-        $('#formSubmit').text('Security check in progress. Please wait...')
+        $('#formSubmit').text('Getting all the inventory. Please wait...')
         $.ajax({
           data: $('#awsForm').serialize(),
           type: 'POST',
